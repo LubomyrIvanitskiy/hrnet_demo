@@ -16,3 +16,5 @@ To deploy the project on your Linux (tested on Ububntu) machine run the followin
 6. sudo docker image build -f Dockerfile-base -t base requirements
 7. sudo docker image build -t app:latest . #Do not miss the dot in the end
 8. sudo docker run -d -p 80:8008 app:latest
+
+![alt text](https://raw.githubusercontent.com/LubomyrIvanitskiy/hrnet_demo/main/hrnet_demo.png)
