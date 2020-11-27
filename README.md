@@ -1,5 +1,5 @@
 
-Deploy your simple pose estimation service on service
+Deploy your simple pose estimation service on Google Cloud
 
 The project is based on https://towardsdatascience.com/10-minutes-to-deploying-a-deep-learning-model-on-google-cloud-platform-13fa56a266ee tutorial and the
 https://github.com/stefanopini/simple-HRNet repository
