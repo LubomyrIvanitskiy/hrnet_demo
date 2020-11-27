@@ -1,3 +1,0 @@
-FROM base
-RUN python --version
-EXPOSE 8008

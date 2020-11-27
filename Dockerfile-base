@@ -1,5 +1,6 @@
 FROM python:3-slim-stretch
-RUN apt update
-RUN apt install -y python3-dev gcc
-COPY requirements.txt .
+RUN python -m pip install --upgrade pip setuptools wheel
+RUN apt update && apt install -y python3-dev gcc && apt install -yq libgl1-mesa-glx && apt-get install -yq libglib2.0-0
+EXPOSE 8008
 RUN python -m pip --no-cache-dir install -r requirements.txt
+
