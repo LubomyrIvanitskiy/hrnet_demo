@@ -1,4 +1,3 @@
 FROM base
-COPY apptest.py .
 RUN python --version
 EXPOSE 8008
