@@ -1,5 +1,3 @@
-# hrnet_demo
-HRNet Pose Estimation Demo
 
 Deploy your simple pose estimation service on service
 
@@ -8,8 +6,13 @@ https://github.com/stefanopini/simple-HRNet repository
 
 To deploy the project on your Linux (tested on Ububntu) machine run the following commands:
 
-1. git clone https://github.com/LubomyrIvanitskiy/hrnet_demo.git
-2. cd hrnet_demo
-2. chmod 755 setup_hrnet.sh
-3. sh setup_hrnet.sh
-4. 
+1. Install docker. Follow https://docs.docker.com/engine/install/ubuntu/ or:
+1.1 chmod 755 install_docker.sh
+1.2 sudo sh install_docker.sh
+2. git clone https://github.com/LubomyrIvanitskiy/hrnet_demo.git
+3. cd hrnet_demo
+4. chmod 755 setup_hrnet.sh
+5. sh setup_hrnet.sh
+6. sudo docker image build -f Dockerfile-base -t base requirements
+7. sudo docker image build -t app:latest . #Do not miss the dot in the end
+8. sudo docker run -d -p 80:8008 app:latest
